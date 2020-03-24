@@ -1,1 +1,1 @@
-# six-nations-rosters
+Simple React practice project
