@@ -1,12 +1,13 @@
-import React, { Fragment } from 'react';
-import Card from './Card';
+import React from 'react';
+import TeamCard from './TeamCard';
 
-const NavBar = ({ teams }) => {
+const TeamList = ({ teams, teamChange }) => {
   return (
-    <Fragment>
+    <div>
       {teams.map((team, i) => {
         return (
-          <Card
+          <TeamCard
+            onClick={teamChange}
             key={teams[i].id}
             id={teams[i].id}
             img={teams[i].img}
@@ -15,8 +16,8 @@ const NavBar = ({ teams }) => {
           />
         );
       })}
-    </Fragment>
+    </div>
   );
 };
 
-export default NavBar;
+export default TeamList;
