@@ -278,3 +278,59 @@ export const frenchPlayers = [
     apps: '7'
   }
 ];
+
+export const irishPlayers = [
+  {
+    id: 1,
+    img:
+      'https://cdn.soticservers.net/tools/images/players/photos/2019/sixnations/129/250x250/141574.jpg',
+    name: 'Gregory Alldritt',
+    pos: 'Number 8',
+    age: 23,
+    ht: '1.91 m',
+    wt: '107 kg',
+    apps: '7'
+  }
+];
+
+export const italianPlayers = [
+  {
+    id: 1,
+    img:
+      'https://cdn.soticservers.net/tools/images/players/photos/2019/sixnations/129/250x250/141574.jpg',
+    name: 'Gregory Alldritt',
+    pos: 'Number 8',
+    age: 23,
+    ht: '1.91 m',
+    wt: '107 kg',
+    apps: '7'
+  }
+];
+
+export const scotishPlayers = [
+  {
+    id: 1,
+    img:
+      'https://cdn.soticservers.net/tools/images/players/photos/2019/sixnations/129/250x250/141574.jpg',
+    name: 'Gregory Alldritt',
+    pos: 'Number 8',
+    age: 23,
+    ht: '1.91 m',
+    wt: '107 kg',
+    apps: '7'
+  }
+];
+
+export const welshPlayers = [
+  {
+    id: 1,
+    img:
+      'https://cdn.soticservers.net/tools/images/players/photos/2019/sixnations/129/250x250/141574.jpg',
+    name: 'Gregory Alldritt',
+    pos: 'Number 8',
+    age: 23,
+    ht: '1.91 m',
+    wt: '107 kg',
+    apps: '7'
+  }
+];

@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 
-import NavBar from './NavBar';
+import TeamList from './TeamList';
 import { teams } from './teams';
 import SearchField from './SearchField';
-import CardList from './CardList';
-import { englandPlayers, frenchPlayers } from './players';
+import PlayerList from './PlayerList';
+import {
+  englandPlayers,
+  frenchPlayers,
+  irishPlayers,
+  italianPlayers,
+  scotishPlayers,
+  welshPlayers
+} from './players';
 
 class App extends Component {
   constructor() {
@@ -14,6 +21,10 @@ class App extends Component {
       searchField: ''
     };
   }
+
+  onTeamClick = event => {
+    console.log(event);
+  };
 
   onSearchChange = event => {
     this.setState({ searchField: event.target.value });
@@ -29,9 +40,9 @@ class App extends Component {
     return (
       <div className='tc'>
         <h1 className='f1'>Guinness Six Nations Rosters</h1>
-        <NavBar teams={teams} />
+        <TeamList teams={teams} teamChange={this.onTeamClick} />
         <SearchField searchChange={this.onSearchChange} />
-        <CardList players={filteredPlayers} />
+        <PlayerList players={filteredPlayers} />
       </div>
     );
   }

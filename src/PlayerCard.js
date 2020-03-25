@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
 
-const FlipCard = ({ img, name, pos, age, ht, wt, apps }) => {
+const PlayerCard = ({ img, name, pos, age, ht, wt, apps }) => {
   return (
     <div className='tc bg-black dib br3 pa3 ma2 grow bw2 shadow-5'>
       <Flippy flipOnHover={true} flipDirection='horizontal'>
@@ -34,4 +34,4 @@ const FlipCard = ({ img, name, pos, age, ht, wt, apps }) => {
   );
 };
 
-export default FlipCard;
+export default PlayerCard;

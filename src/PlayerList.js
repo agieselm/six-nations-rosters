@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
-import FlipCard from './FlipCard';
+import PlayerCard from './PlayerCard';
 
-const CardList = ({ players }) => {
+const PlayerList = ({ players }) => {
   return (
     <Fragment>
       {players.map((player, i) => {
         return (
-          <FlipCard
+          <PlayerCard
             key={players[i].id}
             id={players[i].id}
             img={players[i].img}
@@ -23,4 +23,4 @@ const CardList = ({ players }) => {
   );
 };
 
-export default CardList;
+export default PlayerList;
